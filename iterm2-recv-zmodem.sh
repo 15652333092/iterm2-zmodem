@@ -10,7 +10,7 @@ if [[ $FILE = "" ]]; then
 	echo
 	echo \# Cancelled transfer
 else
-    echo $FILE
+	echo $FILE
 	cd "$FILE"
 	/opt/homebrew/bin/rz --rename --escape --binary --bufsize 4096 
 	sleep 1
